@@ -1,0 +1,126 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+}
+.header-half{
+    height: 100%;
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #9E9FA2;
+}
+/* 
+https://i.ibb.co/bLV5tXb/main-slider-1-2-1-X.png
+*/
+.logo img{
+    height: 20px;
+    max-width: 100px;
+    margin-top: 3px;
+    margin-right: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 15px;
+    height: 80px;
+    border-bottom:2px solid #9E9FA2;
+    background-color: rgba(0, 0, 0, 0.90);;
+}
+.nav-item-container{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+.search{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-left: 2px solid #9E9FA2;
+    border-right: 2px solid #9E9FA2;
+}
+.need-help{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.nav-item:hover,
+.burger-menu-item a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.nav-icon{
+   display: none;
+}
+
+.burger-menu-item{
+    z-index: 9999;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right:10px;
+    background-color: rgba(0, 0, 0, 0.90);
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    transform: translateX(200px);
+    transition: transform .15s cubic-bezier(.4,0,.2,1),-webkit-transform .15s cubic-bezier(.4,0,.2,1);
+}
+
+.burger-menu-item a{
+    line-height: 30px;
+    padding: 5px;
+    transition: all 0.2s linear;
+    text-decoration: none;
+    color: #fff;
+}
+
+.burger-socials{
+    margin-top: 10px;
+}
+
+.icon-close{
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 16px;
+    margin-left: auto;
+}
+.burger-menu-visible{
+    transform: translateX(0);
+}
+
+@media only screen and (max-width:992px) {
+    .nav-item,
+    .need-help{
+        display: none;
+    }
+
+    .nav-icon{
+        display: inline-block;
+   }
+   nav{
+       padding-left: 10px;
+   }
+   .search{
+       border-left: none;
+       border-right: none;
+   }
+}
