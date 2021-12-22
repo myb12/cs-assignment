@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/************Some global styles************/
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.overlay{
+  position: absolute;
+  background-color: #00000069;
+  height: 100%;
+  width: 100%;
+}
+.z-index-2{
+  z-index: 2;
+}

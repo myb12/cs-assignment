@@ -26,7 +26,7 @@ const Header = () => {
                     </div>
 
                     <div className='nav-item-container'>
-                        <a href="/#" className="nav-item">
+                        <a href="/#" className="nav-item active">
                             Home
                         </a>
                         <a href="/#" className="nav-item">
@@ -70,7 +70,7 @@ const Header = () => {
                         <a href="/#" className="need-help">
                             <span>Need help?</span>
                             <span>
-                                <a href="callto:+926668880000">+92 666 888 0000</a>
+                                +92 666 888 0000
                             </span>
                         </a>
                         <a href="/#" className="nav-icon" onClick={handleClick}>
@@ -81,7 +81,7 @@ const Header = () => {
             </nav>
             <div className={burgerItem ? 'burger-menu-item burger-menu-visible' : 'burger-menu-item'}>
                 <FaWindowClose className="icon-close" onClick={handleClick} />
-                <a href="/#">
+                <a href="/#" className='active'>
                     Home
                 </a>
                 <a href="/#">
