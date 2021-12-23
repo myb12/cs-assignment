@@ -12,14 +12,11 @@
 .logo{
     display: flex;
     align-items: center;
-    border-right: 2px solid #9e9fa280;
+    border-right: 2px solid var(--color-primary-darker);
 }
-/* 
-https://i.ibb.co/bLV5tXb/main-slider-1-2-1-X.png
-*/
+
 .logo img{
-    height: 20px;
-    max-width: 100px;
+    height: 30px;
     margin-top: 3px;
     margin-right: 20px;
 }
@@ -28,10 +25,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 15px;
+    padding: 0 15px;
     height: 80px;
-    border-bottom:2px solid #9e9fa280;
+    border-bottom:2px solid var(--color-primary-darker);
 }
 .nav-item-container{
     display: flex;
@@ -53,8 +49,8 @@ nav a{
     align-items: center;
     padding-left: 15px;
     padding-right: 5px;
-    border-left: 2px solid #9e9fa280;
-    border-right: 2px solid #9e9fa280;
+    border-left: 2px solid var(--color-primary-darker);
+    border-right: 2px solid var(--color-primary-darker);
 }
 .need-help{
     display: flex;
@@ -63,14 +59,16 @@ nav a{
 }
 .nav-item:hover,
 .burger-menu-item a:hover{
-    background-color: #3C72FC;
+    background-color: var(--color-primary);
 }
 .active{
-    background-color: #3C72FC;
+    background-color: var(--color-primary);
 }
 
 .nav-icon{
    display: none;
+   margin-right: 0;
+   padding: 0;
 }
 
 .burger-menu-item{
@@ -78,12 +76,12 @@ nav a{
     padding: 10px;
     position: absolute;
     top: 60px;
-    right:10px;
-    background-color: #000000c4;
+    right:15px;
+    background-color: var(--color-secondary-opacity);
     display: flex;
     flex-direction: column;
     width: 170px;
-    transform: translateX(200px);
+    transform: translateX(220px);
     transition: transform .15s cubic-bezier(.4,0,.2,1),-webkit-transform .15s cubic-bezier(.4,0,.2,1);
 }
 

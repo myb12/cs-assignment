@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomButton from '../Shared/CustomButton';
 import './Hero.css';
 
 const Hero = () => {
@@ -13,6 +14,9 @@ const Hero = () => {
                         <p>For Every</p>
                         <p>Business</p>
                     </div>
+                    <CustomButton>
+                        Discover more
+                    </CustomButton>
                 </div>
             </div>
         </div>

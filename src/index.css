@@ -12,6 +12,16 @@ code {
     monospace;
 }
 
+/************Some relevent color variable************/
+:root {
+  --color-primary: #3C72FC;
+  --color-primary-darker: #9e9fa280;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-overlay: #00000069;
+  --color-secondary-opacity: #00000085;
+}
+
 /************Some global styles************/
 .container{
   max-width: 1200px;
@@ -19,7 +29,7 @@ code {
 }
 .overlay{
   position: absolute;
-  background-color: #00000069;
+  background-color: var(--color-overlay);
   height: 100%;
   width: 100%;
 }
