@@ -10,7 +10,7 @@ const Experience = () => {
     const isMobile = useMediaQuery('(max-width: 480px)');
     const isTab = useMediaQuery('(min-width: 480px) and (max-width: 990px)');
     const isPc = useMediaQuery('(min-width: 1050px)');
-    
+
     useEffect(() => {
         if (isPc) setEndIndex(5);
         if (isTab) setEndIndex(3);
