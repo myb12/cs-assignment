@@ -73,7 +73,8 @@ const Header = () => {
                                 +92 666 888 0000
                             </span>
                         </a>
-                        <a href="/#" className={burgerItem ? 'hidden nav-icon' : 'nav-icon'} onClick={handleClick}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a className={burgerItem ? 'hidden nav-icon' : 'nav-icon'} onClick={handleClick}>
                             <FaBars />
                         </a>
                     </div>
