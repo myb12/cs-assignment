@@ -1,0 +1,36 @@
+.experience-card{
+    background-color: var(--color-black);
+    padding: 30px;
+    z-index: 2;
+}
+.card-title{
+    text-transform: uppercase;
+    width: 80%;
+    word-wrap: break-word;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-body{
+    display: flex;
+    justify-content: space-between;
+}
+.link-button{
+    display: flex;
+    align-items: center;
+}
+
+.link-button a{
+    text-decoration: none;
+    color: var(--color-white);
+    position: relative;
+    text-transform: capitalize !important;
+}
+.link-button a:before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width:15px;
+    height: 1px;
+    background: #fff;
+}

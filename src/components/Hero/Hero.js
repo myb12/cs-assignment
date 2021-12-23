@@ -4,7 +4,7 @@ import './Hero.css';
 
 const Hero = () => {
     return (
-        <div className="hero-section">
+        <section className="hero-section">
             <div className="overlay"></div>
             <div className="container hero-content">
                 <div className="hero-inner-box">
@@ -19,7 +19,7 @@ const Hero = () => {
                     </CustomButton>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

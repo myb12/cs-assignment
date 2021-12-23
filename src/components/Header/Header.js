@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
     FaBars,
-    FaWindowClose,
     FaLinkedin,
     FaInstagram,
     FaFacebook,
@@ -9,6 +8,7 @@ import {
 
 } from 'react-icons/fa';
 import { FiSearch } from 'react-icons/fi';
+import { MdOutlineClose, } from 'react-icons/md';
 import './Header.css';
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
         setBurgerItem(!burgerItem);
     }
     return (
-        <div className="header">
+        <header className="header">
             <nav>
                 <div className="header-half">
                     <div className="logo" >
@@ -73,14 +73,14 @@ const Header = () => {
                                 +92 666 888 0000
                             </span>
                         </a>
-                        <a href="/#" className="nav-icon" onClick={handleClick}>
+                        <a href="/#" className={burgerItem ? 'hidden nav-icon' : 'nav-icon'} onClick={handleClick}>
                             <FaBars />
                         </a>
                     </div>
                 </div>
             </nav>
             <div className={burgerItem ? 'burger-menu-item burger-menu-visible' : 'burger-menu-item'}>
-                <FaWindowClose className="icon-close" onClick={handleClick} />
+                <MdOutlineClose className="icon-close" onClick={handleClick} />
                 <a href="/#" className='active'>
                     Home
                 </a>
@@ -115,7 +115,7 @@ const Header = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </header>
     );
 };
 
