@@ -1,0 +1,26 @@
+.case-studio-section{
+    background-color: var(--color-light-grey);
+}
+
+.case-studio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:480px) {
+    .case-studio-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:992px) {
+    .case-studio-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 10px;
+    }
+}

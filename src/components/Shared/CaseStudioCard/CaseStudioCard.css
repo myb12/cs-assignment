@@ -1,0 +1,69 @@
+.case-studio-card{
+    position: relative;
+}
+.case-studio-card img{
+    max-width: 100%;
+}
+
+.case-studio-card-body{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 60%;
+    color:var(--color-white);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.case-studio-card-body::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    position: inherit;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.case-studio-card-body:hover:before{
+    transform: scale(1);
+    opacity: 1;
+}
+.car-icon{
+    font-size: 70px;
+    z-index: 990;
+    position: relative;
+}
+
+.case-studio-card-body small{
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 995;
+}
+.case-studio-card-body span{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 5px;
+    z-index: 999;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width:688px) {
+    .case-studio-card-body{
+        padding-right: 20px;
+    }
+    .car-icon{
+        font-size: 50px;
+    }
+
+    .case-studio-card-body span{
+      font-size: 22px;
+    }
+}

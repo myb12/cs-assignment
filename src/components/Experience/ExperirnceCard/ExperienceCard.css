@@ -18,6 +18,7 @@
 .link-button{
     display: flex;
     align-items: center;
+    
 }
 
 .link-button a{
@@ -25,6 +26,7 @@
     color: var(--color-white);
     position: relative;
     text-transform: capitalize !important;
+    transition: all 0.3s ease;
 }
 .link-button a:before{
     content: "";
@@ -33,4 +35,13 @@
     width:15px;
     height: 1px;
     background: #fff;
+    transition: all 0.3s ease;
+}
+.link-button a:hover
+{
+    color: var(--color-primary);
+}
+.link-button a:hover:before
+{
+    background: var(--color-primary);
 }

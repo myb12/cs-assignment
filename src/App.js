@@ -1,4 +1,5 @@
 import './App.css';
+import CaseStudio from './components/CaseStudio/CaseStudio';
 import Experience from './components/Experience/Experience';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Experience />
       <Services />
+      <CaseStudio />
     </div>
   );
 }

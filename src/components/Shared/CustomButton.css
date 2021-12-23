@@ -10,8 +10,9 @@
   color: var(--color-white);
   text-transform: uppercase;
   font-weight: bolder;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .custom-button:hover {
     background-color: var(--color-white);

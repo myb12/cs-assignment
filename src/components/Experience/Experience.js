@@ -72,7 +72,8 @@ const Experience = () => {
         <section className="experience-section" style={{ paddingBottom: 100 }}>
             <img className="experience-wave-shape" src="https://i.ibb.co/mBSLJxQ/real-world-shape.png" alt="" />
             <div className="container">
-                <div className="experience-heading">
+
+                <div className="heading pt-80">
                     <h1>Real-world experience</h1>
                     <h4>The best business consulting firm you can count on!</h4>
                 </div>
