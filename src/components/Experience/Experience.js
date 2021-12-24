@@ -84,7 +84,6 @@ const Experience = () => {
                     <ExperienceCard />
                 </article>
 
-
                 <div>
                     <div className="partner-heading">
                         <div>

@@ -1,6 +1,7 @@
 import './App.css';
 import CaseStudio from './components/CaseStudio/CaseStudio';
 import Experience from './components/Experience/Experience';
+import Faq from './components/Faq/Faq';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Mission from './components/Mission/Mission';
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <CaseStudio />
       <Mission />
+      <Faq />
     </div>
   );
 }

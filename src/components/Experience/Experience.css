@@ -65,11 +65,11 @@
             opacity: 1;
             visibility: visible;
         }
-    }
+}
 
-    .mounted-style {
-        animation: in-animation 0.5s ease-in-out;
-    }
+.mounted-style {
+    animation: in-animation 0.5s ease-in-out;
+}
 @media only screen and (max-width:688px) {
     .experience-card-container{
         display: grid;
