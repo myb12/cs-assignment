@@ -116,6 +116,10 @@ const Header = () => {
                     </a>
                 </div>
             </div>
+
+            <div className={burgerItem ? 'burger-overlay-visible' : 'burger-overlay-invisible' } onClick={handleClick}>
+                <div className="burger-overlay"></div>
+            </div>
         </header>
     );
 };
