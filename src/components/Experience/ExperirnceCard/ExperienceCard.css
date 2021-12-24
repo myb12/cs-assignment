@@ -44,4 +44,5 @@
 .link-button a:hover:before
 {
     background: var(--color-primary);
+    width: 100%;
 }
