@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Mission from './components/Mission/Mission';
 import Services from './components/Services/Services';
+import Testimonial from './components/Testimonial/Testimonial';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <CaseStudio />
       <Mission />
       <Faq />
+      <Testimonial />
     </div>
   );
 }

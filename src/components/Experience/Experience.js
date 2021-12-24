@@ -102,10 +102,7 @@ const Experience = () => {
                             <FiArrowLeft />
                         </div>
                         {
-                            partnersDataToShow.map(each => <>
-                                <p>{each.title}</p>
-                                <img src={each.src} alt="Brand" />
-                            </>)
+                            partnersDataToShow.map(each => <img src={each.src} alt="Brand" />)
                         }
                         <div onClick={handleNext} className={endIndex === partnersData.length ? 'arrow-container arrow-container-disable' : 'arrow-container'}>
                             <FiArrowRight />
