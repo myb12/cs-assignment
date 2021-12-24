@@ -3,14 +3,12 @@
     color: var(--color-white);
     position: relative;
 }
-
 .experience-wave-shape{
     position: absolute;
     left: 0;
     top: 0;
     width: 400px;
 }
-
 .experience-card-container{
     margin-top: 60px;
     display: grid;
@@ -51,6 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .arrow-container-disable{
     background-color: var(--color-primary-darker);

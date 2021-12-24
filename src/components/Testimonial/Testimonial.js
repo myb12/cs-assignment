@@ -9,14 +9,13 @@ const Testimonial = () => {
     const [endIndex, setEndIndex] = useState(2);
     const [animation, setAnimation] = useState(false);
     const isMobile = useMediaQuery('(max-width: 992px)');
-    const aboveMobile = useMediaQuery('(min-width: 601px)');
-    const isSmallMobile = useMediaQuery('(max-width: 600px)');
+    const aboveMobile = useMediaQuery('(min-width: 993px)');
 
 
     useEffect(() => {
-        if (isSmallMobile) setEndIndex(1);
+        if (isMobile) setEndIndex(1);
         if (aboveMobile) setEndIndex(2);
-    }, [isSmallMobile, aboveMobile])
+    }, [isMobile, aboveMobile])
 
     useEffect(() => {
         setAnimation(true);
@@ -40,22 +39,22 @@ const Testimonial = () => {
             id: 1,
             name: 'Todd Higgins',
             role: 'Customer',
-            text: 'From the start of the project, through to completion, Todd supported us and exceeded our expectations in every way. Not only was our experience personal and friendly, his ability to identify and present our key messages in an imaginative and creative way gave us a huge.',
-            imgURL: 'https://i.ibb.co/RbMYqKF/testimonials-1-1-1-X-1.png '
+            text: 'Todd was very helpful and fast to respond to my inquiry to help with Wordpress website issues.  His knowledge was comprehensive.  Even better, his advice helped me enough to solve the problems and he did not accept any payment for this, very straight up guy! Thank you Todd Higgins.',
+            imgURL: 'https://i.ibb.co/M6tvKnZ/about-6.jpg'
         },
         {
             id: 2,
             name: 'James Franklin',
             role: 'Designer',
-            text: 'In many ways James understood our clients website needs better than we did and he complimented our vision perfectly. He is reliable, professional and easy to work with. I cant recommend him highly enough and we look forward to continuing our working relationship together.',
+            text: 'James was very helpful and fast to respond to my inquiry to help with Wordpress website issues.  His knowledge was comprehensive.  Even better, his advice helped me enough to solve the problems and he did not accept any payment for this, very straight up guy! Thank you James.',
             imgURL: 'https://i.ibb.co/1fZVmfQ/testimonials-1-1-1-X.png'
         },
         {
             id: 3,
             name: 'Jonas Shemdthmann',
             role: 'Web Developer',
-            text: 'Jonas was very helpful and fast to respond to my inquiry to help with Wordpress website issues.  His knowledge was comprehensive.  Even better, his advice helped me enough to solve the problems and he did not accept any payment for this, very straight up guy! Thank you Jonas.',
-            imgURL: 'https://i.ibb.co/RbMYqKF/testimonials-1-1-1-X-1.png '
+            text: 'Jonas was very helpful and fast to respond to my inquiry to help with Wordpress website issues.  His knowledge was comprehensive.  Even better, his advice helped me enough to solve the problems and he did not accept any payment for this, very straight up guy! Thank you Jonas Shemdthmann.',
+            imgURL: 'https://i.ibb.co/nnz5Mvj/about-7.jpg'
         },
     ]
 
@@ -96,8 +95,6 @@ const Testimonial = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="mt-100"></div>
         </section>
     );
 };

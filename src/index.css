@@ -27,6 +27,7 @@ code {
   --color-secondary-opacity: #00000085;
   --color-grey: #726F84;
   --color-light-grey: #F2F4F8;
+  --color-border-light: #E6E9EF;
 }
 
 /************Some global styles************/
@@ -93,5 +94,3 @@ code {
     font-size: 14px;
   }
 }
-
-/* https://i.ibb.co/DLk9C5S/mission-bg.png */

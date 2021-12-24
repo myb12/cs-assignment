@@ -1,5 +1,6 @@
 import './App.css';
 import CaseStudio from './components/CaseStudio/CaseStudio';
+import Client from './components/Client/Client';
 import Experience from './components/Experience/Experience';
 import Faq from './components/Faq/Faq';
 import Header from './components/Header/Header';
@@ -19,6 +20,7 @@ function App() {
       <Mission />
       <Faq />
       <Testimonial />
+      <Client />
     </div>
   );
 }

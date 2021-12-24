@@ -142,6 +142,14 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+.service-title{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.service-details{
+    text-align: center;
+}
 .servces-left{
     display: flex;
     justify-content: center;
