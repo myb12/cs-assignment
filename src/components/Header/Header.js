@@ -22,7 +22,7 @@ const Header = () => {
             <nav>
                 <div className="header-half">
                     <div className="logo" >
-                        <img src="https://i.ibb.co/cDCSqLh/Group-15.png" alt="" />
+                        <img src="https://i.ibb.co/cDCSqLh/Group-15.png" alt="Logo" />
                     </div>
 
                     <div className='nav-item-container'>

@@ -40,6 +40,7 @@
 
 .play-box{
     background-color: var(--color-primary);
+    border: 1px solid transparent;
     width: 100px;
     height: 100px;
     position:absolute;
@@ -47,11 +48,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition:all 0.3s linear;
+}
+.play-box:hover .play-icon{
+    color: var(--color-primary);
+}
+.play-box:hover{
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
 }
 
 .play-icon{
     color: var(--color-white);
     font-size: 30px;
+    transition:all 0.3s linear;
 }
 
 .service-shape-top{
