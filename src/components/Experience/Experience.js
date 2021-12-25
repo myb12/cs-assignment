@@ -35,36 +35,37 @@ const Experience = () => {
     }
 
     //----------fake data for partners----------//
+
     const partnersData = [
         {
-            src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
+            src: 'https://i.ibb.co/jbWQ0J3/brand-1.png',
         },
         {
-            src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
+            src: 'https://i.ibb.co/bHj2dQy/Brand-2.png',
         },
         {
-            src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
+            src: 'https://i.ibb.co/tHBVcML/Brand-3.png',
         },
         {
-            src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
+            src: 'https://i.ibb.co/W2MDn2g/Brand-4.png',
         },
         {
-            src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
+            src: 'https://i.ibb.co/qRj3Lxf/Brand-5.png',
         },
         {
-            src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
+            src: 'https://i.ibb.co/48DkGfX/Brand-6.png',
         },
         {
-            src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
+            src: 'https://i.ibb.co/vxSGp4z/Brand-7.png',
         },
         {
-            src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
+            src: 'https://i.ibb.co/vcfWGnP/Brand-8.png',
         },
         {
-            src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
+            src: 'https://i.ibb.co/TRm2ZK3/Brand-9.png',
         },
         {
-            src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
+            src: 'https://i.ibb.co/DYB9xbW/Brand-10.png',
         },
     ];
     const partnersDataToShow = partnersData.slice(startIndex, endIndex)
