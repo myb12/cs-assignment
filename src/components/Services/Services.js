@@ -6,6 +6,7 @@ import ProgressBar from '../Shared/ProgressBar/ProgressBar';
 import ServiceCard from '../Shared/ServiceCard/ServiceCard';
 
 const Services = () => {
+    //---------fake data for services---------//
     const serviceData = [
         {
             serviceNumber: '01',
@@ -22,19 +23,19 @@ const Services = () => {
     ]
     return (
         <section className="services-section">
-            <img src="https://i.ibb.co/TYX4tP5/service-path-bottom.png" alt="" className="service-shape-top" />
-            <img src="https://i.ibb.co/qkxB0J7/service-path-top.png" alt="" className="service-shape-bottom" />
 
+            <img src="https://i.ibb.co/TYX4tP5/service-path-bottom.png" alt="Service section shape" className="service-shape-top" />
+            <img src="https://i.ibb.co/qkxB0J7/service-path-top.png" alt="Service section shape" className="service-shape-bottom" />
 
-            <div className="servces-container container">
-                <div className="servces-left">
+            <div className="services-container container">
+                <div className="services-left">
                     <div className="play-box">
                         <FaPlay className="play-icon" />
                     </div>
-                    <img src="https://i.ibb.co/RNtrz5Q/1-1X.png" alt="" />
-                    <img src="https://i.ibb.co/W03XHWs/2-1X.png" alt="" />
+                    <img src="https://i.ibb.co/RNtrz5Q/1-1X.png" alt="People working" />
+                    <img src="https://i.ibb.co/W03XHWs/2-1X.png" alt="People working" />
                 </div>
-                <div className="servces-right">
+                <div className="services-right">
                     <div>
                         <h1 className="service-title">We’re leading in the market</h1>
                         <p className="service-details">
@@ -61,6 +62,8 @@ const Services = () => {
                     </div>
                 </div>
             </div>
+
+            {/* service cards starts */}
             <div className="container">
                 <div className="service-cards">
                     {
@@ -71,6 +74,7 @@ const Services = () => {
                     }
                 </div>
             </div>
+            {/* service cards end */}
         </section>
     );
 };

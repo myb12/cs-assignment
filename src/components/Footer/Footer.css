@@ -3,6 +3,7 @@ footer{
     position: relative;
     color: var(--color-footer-text);
 }
+
 .footer-wave-shape{
     position: absolute;
     right: 0;
@@ -10,16 +11,19 @@ footer{
     width: 400px;
     z-index: 1;
 }
+
 .footer-section{
     display: grid;
     grid-template-columns: 4fr 3fr 5fr;
     grid-gap: 20px;
     padding:80px 10px
 }
+
 .footer-about{
     margin-top: 30px;
     position: relative;
 }
+
 .footer-about:before{
     content: "";
     width: 100%;
@@ -28,11 +32,13 @@ footer{
     bottom: -25px;
     background-color: var(--color-footer-devider);
 }
+
 .footer-contact{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
+
 .footer-icons{
     display: flex;
     align-items: center;
@@ -40,27 +46,33 @@ footer{
     transition: all 0.3s linear;
     cursor: pointer;
 }
+
 .footer-icons:hover{
     color: var(--color-primary);
 }
+
 .footer-icon-phone{
     color: var(--color-phone-icon);
 }
 .footer-icon-email{
     color: var(--color-email-icon);
 }
+
 .footer-icon-location{
     color: var(--color-location-icon);
 }
+
 .footer-title{
     color:var(--color-white);
     margin-top: 0;
     text-transform: uppercase;
 }
+
 .footer-links{
     display: flex;
     justify-content: space-between;
 }
+
 .footer-links a{
     display: block;
     text-decoration: none;
@@ -69,9 +81,11 @@ footer{
     margin-bottom: 16px;
     transition: all 0.3s linear;
 }
+
 .footer-links a:hover{
     color: var(--color-primary);
 }
+
 .subscribe{
     background-color: var(--color-black);
     z-index: 2;
@@ -81,9 +95,11 @@ footer{
     align-items: center;
     height: 100%;
 }
+
 .subscribe-container{
     position: relative;
 }
+
 .subscribe input{
     width: 100%;
     padding: 18px 24px;
@@ -91,13 +107,16 @@ footer{
     position: relative;
     border: none;
 }
+
 .subscribe h3{
     text-align: center;
 }
+
 .register-button-container{
     display: flex;
     border: 10px solid var(--color-white);
 }
+
 .register-button{
     color: var(--color-white);
     font-size: 12px;
@@ -109,6 +128,7 @@ footer{
     cursor: pointer;
     transition: all 0.3s linear;
 }
+
 .register-button:hover{
     color: var(--color-primary);
     background-color: var(--color-white);
@@ -119,20 +139,24 @@ footer{
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .subscriber-for-mobile h3{
   text-align: center;
 }
+
 .subscribe-show{
     display: block;
 }
 .subscribe-hidden{
     display: none;
 }
+
 .copywrite-footer{
     position: relative;
     margin-top: 40px;
     padding-bottom: 50px;
 }
+
 .copywrite-footer:before{
     content: "";
     width: 100%;
@@ -141,6 +165,7 @@ footer{
     top: -20px;
     background-color: var(--color-footer-devider);
 }
+
 .copywrite-footer>div{
     display: flex;
     justify-content: space-between;
@@ -148,6 +173,7 @@ footer{
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .instagram-icon,
 .linkedin-icon,
 .twitter-icon,
@@ -159,39 +185,46 @@ footer{
     cursor: pointer;
     transition: all .3s ease-in-out
 }
+
 .instagram-icon:hover{
     color:var(--color-instagram);
 }
+
 .linkedin-icon:hover{
     color:var(--color-linkedin);
 }
+
 .twitter-icon:hover{
     color:var(--color-twitter);
 }
+
 .facebook-icon:hover{
     color:var(--color-facebook);
 }
+
 @media only screen and (max-width:480px) {
     .footer-section{
        grid-template-columns: 1fr;
        padding-bottom: 30px;
-   }
+    }
     .register-button-container{
-        flex-direction: column;
+       flex-direction: column;
     }
 }
+
 @media only screen and (max-width:600px) {
     .copywrite-footer>div{
        display: flex;
        flex-direction: column;
-   }
+    }
     .footer-links{
-        justify-content: start;
+       justify-content: start;
     }
     .footer-links div:nth-of-type(1){
-        margin-right: 20px;
+       margin-right: 20px;
     }
 }
+
 @media only screen and (min-width:481px) and (max-width:990px) {
     .footer-section{
        grid-template-columns: repeat(2,1fr);
@@ -209,6 +242,4 @@ footer{
     .footer-links div:nth-of-type(1){
         margin-right: 20px;
     }
-    
-
 }

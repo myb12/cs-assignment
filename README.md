@@ -8,6 +8,6 @@
 
 ### Tools used to build this project
 * ReactJs
-* Vanila CSS 
+* Vanilla CSS 
 * React Hook
 * React Icons

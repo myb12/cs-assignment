@@ -12,7 +12,8 @@
     bottom: 0;
     z-index: 1;
 }
-.servces-container{
+
+.services-container{
     position: relative;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -20,17 +21,20 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.servces-left{
+
+.services-left{
     position: relative;
 }
-.servces-left img{
+
+.services-left img{
     max-width: 100%;
 }
 
-.servces-left img:nth-of-type(1){
+.services-left img:nth-of-type(1){
     margin-left: 50px;
 }
-.servces-left img:nth-of-type(2){
+
+.services-left img:nth-of-type(2){
    max-height: 350px;
    position: absolute;
    top: 50%;
@@ -51,9 +55,11 @@
     cursor: pointer;
     transition:all 0.3s linear;
 }
+
 .play-box:hover .play-icon{
     color: var(--color-primary);
 }
+
 .play-box:hover{
     background-color: var(--color-white);
     border: 1px solid var(--color-primary);
@@ -83,26 +89,30 @@
     font-weight: 700;
     width: 80%;
 }
+
 .service-details{
     margin-bottom: 30px;
 }
-.servces-right{
+.services-right{
     display: grid;
     grid-template-columns: 11fr 1fr;
     margin-top: 30px;
 }
 
-.servces-right p{
+.services-right p{
     font-size: 18px;
     color:var(--color-grey)
 }
-.servces-right span{
+
+.services-right span{
     font-size: 26px;
     color:var(--color-primary)
 }
+
 .progress-bars{
     margin-top: 70px;
 }
+
 .call-section{
    display: grid;
    grid-template-columns: 2fr 10fr;
@@ -115,13 +125,16 @@
     display: flex;
     flex-direction: column;
 }
+
 .phone span{
     font-size: 18px;
     margin: 2px 0;
 }
+
 .phone span:nth-of-type(1){
     color:var(--color-grey)
 }
+
 .phone span:nth-of-type(2){
     color:var(--color-black)
 }
@@ -147,72 +160,85 @@
 }
 
 @media only screen and (max-width:840px) {
-.servces-container{
-    grid-template-columns: 1fr;
-    grid-gap: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.service-title{
-    width: 100%;
-    text-align: center;
-    font-size: 28px;
-}
-.service-details{
-    text-align: center;
-}
-.servces-left{
-    display: flex;
-    justify-content: center;
-}
-.servces-left img:nth-of-type(1){
-    margin-left: 0;
-}
-.servces-left img:nth-of-type(2){
-    display: none;
-}
+    .services-container{
+        grid-template-columns: 1fr;
+        grid-gap: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-.service-title{
-    font-size: 30px;
-}
-.servces-right{
-    grid-template-columns:1fr;
-}
-.servces-right img{
-    display: none;
-}
-.call-section{
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-}
-.phone{
-    align-items: center;
-}
-.service-cards{
-   grid-template-columns: 1fr;
-   padding-left: 10px;
-   padding-right: 10px;
-   grid-gap:20px;
-}
+    .service-title{
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .service-details{
+        text-align: center;
+    }
+
+    .services-left{
+        display: flex;
+        justify-content: center;
+    }
+
+    .services-left img:nth-of-type(1){
+        margin-left: 0;
+    }
+
+    .services-left img:nth-of-type(2){
+        display: none;
+    }
+    
+    .service-title{
+        font-size: 30px;
+    }
+
+    .services-right{
+        grid-template-columns:1fr;
+    }
+
+    .services-right img{
+        display: none;
+    }
+
+    .call-section{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phone{
+        align-items: center;
+    }
+
+    .service-cards{
+       grid-template-columns: 1fr;
+       padding-left: 10px;
+       padding-right: 10px;
+       grid-gap:20px;
+    }
 
 }
 @media only screen and (min-width:841px) and (max-width:1200px) {
-    .servces-container{
+    .services-container{
         grid-template-columns: 1fr;
         grid-gap: 70px;
         padding-left: 10px;
         padding-right: 10px;
    }
-   .servces-right{
-    grid-template-columns: 1fr;
-  }
-  .servces-right img{
-      display: none;
-  }
-  .call-section{
-      display: flex;
-      margin-top: 0;
-  }
+
+   .services-right{
+        grid-template-columns: 1fr;
+   }
+
+   .services-right img{
+        display: none;
+   }
+   
+   .call-section{
+        display: flex;
+        margin-top: 0;
+   }
 
 }

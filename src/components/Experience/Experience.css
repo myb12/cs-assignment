@@ -1,3 +1,4 @@
+/***********experience section styles***********/
 .experience-section{
     background-color: var(--color-secondary);
     color: var(--color-white);
@@ -15,6 +16,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
+
+/***********partner section styles***********/
 .partner-heading{
     margin-top: 100px;
     display: grid;
@@ -55,26 +58,29 @@
     background-color: var(--color-primary-darker);
 }
 
+/***********animation for partner slider***********/
 @keyframes in-animation {
-        0% {
-            opacity: 0;
-            visibility: hidden;
-        }
-        100%{
-            opacity: 1;
-            visibility: visible;
-        }
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .mounted-style {
     animation: in-animation 0.5s ease-in-out;
 }
+
 @media only screen and (max-width:688px) {
     .experience-card-container{
         display: grid;
         grid-template-columns: 1fr;
         padding: 0 10px;
     }
+
     .experience-wave-shape{
        position: absolute;
        left: 0;
@@ -89,10 +95,12 @@
     .experience-heading h4{
         font-size: 14px;
     }
+
     .partner-heading{
         grid-template-columns: 1fr;
         padding: 0 10px; 
     }
+
     .partner-title{
         margin-top: 13px;
     }
@@ -100,7 +108,7 @@
 }
 
 @media only screen and (min-width:689px) and (max-width:992px) {
-      .experience-card-container{
+    .experience-card-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding: 0 10px;
@@ -110,6 +118,7 @@
         grid-template-columns: 1fr;
         padding: 0 10px;  
     }
+    
      .partner-title{
         margin-top: 13px;
     }

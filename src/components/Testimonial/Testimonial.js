@@ -34,6 +34,7 @@ const Testimonial = () => {
         setAnimation(!animation)
     }
 
+    //---------fakedata for testimonials---------//
     const testimonialData = [
         {
             id: 1,
@@ -59,13 +60,15 @@ const Testimonial = () => {
     ]
 
     const testimoniaToShow = testimonialData.slice(startIndex, endIndex);
+
     return (
         <section className="testimonial-section">
             <div className="testimonial-container container">
                 <div className="testimonial-left">
                     <h1>WHAT THEY ARE TALKING ABOUT?</h1>
                     <p>Trusted by more than 4,200 customers</p>
-
+                    
+                    {/* testimonial navigation arrow */}
                     <div className={!isMobile ? 'testimonial-arrow-container' : 'hidden'}>
                         <div className={startIndex === 0 ? 'arrow-disabled arrow' : 'arrow'} onClick={handlePrevious}>
                             <FiArrowLeft className="arrow-icon" />
@@ -76,14 +79,15 @@ const Testimonial = () => {
                     </div>
 
                 </div>
+                {/* testimonials start */}
                 <div className="testimonial-right">
                     {
                         testimoniaToShow.map(testimonial => <div className="single-testimonial" key={testimonial.id}>
                             <TestimonialCard testimonial={testimonial} animation={animation} />
                         </div>)
                     }
-
                 </div>
+                {/* testimonials end */}
 
                 {/* Only for mobile device */}
                 <div className={isMobile ? 'testimonial-arrow-container show' : 'testimonial-arrow-container hidden'}>

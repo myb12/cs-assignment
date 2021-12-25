@@ -34,7 +34,7 @@ const Experience = () => {
         setAnimation(!animation)
     }
 
-
+    //----------fake data for partners----------//
     const partnersData = [
         {
             src: 'https://i.ibb.co/xJRJKCb/brand-1-1-1-X.png',
@@ -72,7 +72,7 @@ const Experience = () => {
         <section className="experience-section" style={{ paddingBottom: 100 }}>
             <img className="experience-wave-shape" src="https://i.ibb.co/mBSLJxQ/real-world-shape.png" alt="" />
             <div className="container">
-
+                {/* Experience cards section starts */}
                 <div className="heading pt-80">
                     <h1>Real-world experience</h1>
                     <h4>The best business consulting firm you can count on!</h4>
@@ -83,7 +83,9 @@ const Experience = () => {
                     <ExperienceCard />
                     <ExperienceCard />
                 </article>
+                {/* Experience cards section ends */}
 
+                {/* Partners section starts */}
                 <div>
                     <div className="partner-heading">
                         <div>
@@ -109,6 +111,7 @@ const Experience = () => {
                         </div>
                     </div>
                 </div>
+                {/* Partners section ends */}
             </div>
         </section>
     );

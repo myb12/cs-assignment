@@ -6,6 +6,7 @@ import ClientBox from './ClientBox/ClientBox';
 import SuccessCard from './SuccessCard/SuccessCard';
 
 const Client = () => {
+    //--------fake data for success card--------//
     const successData = [
         {
             id: 1,

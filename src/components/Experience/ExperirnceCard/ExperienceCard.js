@@ -11,7 +11,7 @@ const ExperienceCard = () => {
                 <div className="link-button">
                     <a href="/">Read more</a>
                 </div>
-                <img src="https://i.ibb.co/rcTmQzd/Icon-awesome-bitbucket.png" alt="" />
+                <img src="https://i.ibb.co/rcTmQzd/Icon-awesome-bitbucket.png" alt="Bucket icon" />
             </div>
         </div>
     );

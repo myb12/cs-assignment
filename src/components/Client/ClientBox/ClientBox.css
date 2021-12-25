@@ -4,6 +4,7 @@
     align-items:center;  
     height: 200px;
 }
+
 .client-icon-container{
     height: 100px;
     width: 100px;
@@ -12,16 +13,19 @@
     justify-content: center;
     align-items: center;
 }
+
 .client-details{
     text-align: center;
     color: var(--color-white);
 }
+
 .client-details h1{
     font-size: 40px;
     font-weight: 700;
     margin-top: 10px;
     margin-bottom: 0;
 }
+
 .client-details p{
     font-size: 12px;
     font-weight: 600;

@@ -26,22 +26,22 @@ const Header = () => {
                     </div>
 
                     <div className='nav-item-container'>
-                        <a href="/#" className="nav-item active">
+                        <a href="#/" className="nav-item active">
                             Home
                         </a>
-                        <a href="/#" className="nav-item">
+                        <a href="#/" className="nav-item">
                             Services
                         </a>
-                        <a href="/#" className="nav-item">
+                        <a href="#/" className="nav-item">
                             Pages
                         </a>
-                        <a href="/#" className="nav-item">
+                        <a href="#/" className="nav-item">
                             Case Shop
                         </a>
-                        <a href="/#" className="nav-item">
+                        <a href="#/" className="nav-item">
                             Blog
                         </a>
-                        <a href="/#" className="nav-item">
+                        <a href="#/" className="nav-item">
                             Content
                         </a>
                     </div>
@@ -49,25 +49,25 @@ const Header = () => {
 
                 <div className="header-half">
                     <div className='nav-item-container'>
-                        <a href="/#" className="nav-item">
+                        <a href="#/" className="nav-item">
                             <FaInstagram />
                         </a>
 
-                        <a href="/#" className="nav-item after-border">
+                        <a href="#/" className="nav-item after-border">
                             <FaLinkedin />
                         </a>
-                        <a href="/#" className="nav-item">
+                        <a href="#/" className="nav-item">
                             <FaTwitter />
                         </a>
-                        <a href="/#" className="nav-item">
+                        <a href="#/" className="nav-item">
                             <FaFacebook />
                         </a>
                         <div className=' search'>
-                            <a href="/#" className="nav-item">
+                            <a href="#/" className="nav-item">
                                 <FiSearch />
                             </a>
                         </div>
-                        <a href="/#" className="need-help">
+                        <a href="#/" className="need-help">
                             <span>Need help?</span>
                             <span>
                                 +92 666 888 0000
@@ -80,43 +80,47 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
+
+            {/* burger menu for mobile view starts */}
             <div className={burgerItem ? 'burger-menu-item burger-menu-visible' : 'burger-menu-item'}>
                 <MdOutlineClose className="icon-close" onClick={handleClick} />
-                <a href="/#" className='active'>
+                <a href="#/" className='active'>
                     Home
                 </a>
-                <a href="/#">
+                <a href="#/">
                     Services
                 </a>
-                <a href="/#">
+                <a href="#/">
                     Pages
                 </a>
-                <a href="/#">
+                <a href="#/">
                     Case Shop
                 </a>
-                <a href="/#">
+                <a href="#/">
                     Blog
                 </a>
-                <a href="/#">
+                <a href="#/">
                     Content
                 </a>
                 <div className='burger-socials'>
-                    <a href="/#">
+                    <a href="#/">
                         <FaInstagram />
                     </a>
 
-                    <a href="/#">
+                    <a href="#/">
                         <FaLinkedin />
                     </a>
-                    <a href="/#">
+                    <a href="#/">
                         <FaTwitter />
                     </a>
-                    <a href="/#">
+                    <a href="#/">
                         <FaFacebook />
                     </a>
                 </div>
             </div>
+            {/* burger menu for mobile view ends */}
 
+            {/* overlay for burger menu open */}
             <div className={burgerItem ? 'burger-overlay-visible' : 'burger-overlay-invisible' } onClick={handleClick}>
                 <div className="burger-overlay"></div>
             </div>

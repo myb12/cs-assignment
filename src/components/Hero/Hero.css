@@ -1,11 +1,12 @@
 .hero-section{
     position: relative;
     height: 600px;
-    background-image: url(https://i.ibb.co/NxYNgCs/hero-banner.png);
+    background-image: url(https://i.ibb.co/bLzysMm/hero-banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .hero-content{
     color:var(--color-white);
     z-index: 2;
@@ -13,22 +14,26 @@
     display: flex;
     align-items: center;
 }
+
 .hero-inner-box{
     text-align: left;
     z-index: 2;
     margin-left: 15px;
     margin-top: 40px;
 }
+
 .welcome{
     background-color: var(--color-primary-darker);
     padding: 5px 30px 5px  10px;
     text-transform:uppercase;
 }
+
 .hero-heading{
     font-size: 55px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
 .hero-heading p{
     font-weight:700;
     line-height: 1.2;
@@ -40,7 +45,7 @@
     .hero-heading{
         font-size: 30px;
     }
-
+    
     .experience-heading h4{
         font-size: 14px;
     }

@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="footer-section">
                     <img className="footer-wave-shape" src="https://i.ibb.co/4Fgr9qs/footer-shape.png" alt="Footer shape" />
                     <div>
-                        <img src="https://i.ibb.co/cDCSqLh/Group-15.png" alt="" />
+                        <img src="https://i.ibb.co/cDCSqLh/Group-15.png" alt="Logo" />
                         <p className="footer-about">
                             Welcome to our consultancy agency. Lore ipsum simply text amet cing elit simply text amet cing elit.
                         </p>
@@ -51,6 +51,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className={isMobile && "subscribe-hidden"}>
                         <h3 className="footer-title">News letter</h3>
                         <div className="subscribe">
@@ -65,7 +66,10 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+                {/* this subscribe box is only for mobile view */}
                 <div className={isMobile ? "subscriber-for-mobile subscribe-show" : "subscribe-hidden"}>
                     <h3 className="footer-title">News letter</h3>
                     <div className="subscribe">
@@ -80,6 +84,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="copywrite-footer">
                     <div>
                         <p>© Copyright 2021 by Company</p>

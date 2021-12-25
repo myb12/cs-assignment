@@ -5,11 +5,13 @@
     padding: 30px 10px;
     background: var(--color-white);
 }
+
 .success-card{
    display: grid;
    grid-template-columns: 2fr 10fr;
    grid-gap: 16px;
 }
+
 .success-icon{
     display: flex;
     justify-content: center;
@@ -21,11 +23,11 @@
     font-weight: 600;
     color: var(--color-primary);
 }
+
 .success-container{
     display: flex;
     flex-direction: column;
 }
-
 
 .success-container span:nth-of-type(1){
     color:var(--color-black);
@@ -36,8 +38,6 @@
     color:var(--color-grey);
     margin-top: 10px;
 }
-
-
 
 @media only screen and (max-width:840px) {
     .success-card{
@@ -50,6 +50,6 @@
     }
 
     .success-container{
-       text-align: center;
+        text-align: center;
     }   
 }

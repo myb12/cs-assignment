@@ -11,12 +11,16 @@ const Faq = () => {
                 <h4 className="text-grey">We help our clients renew their business</h4>
             </div>
             <div className="faq-container">
+                {/* accordion for FaQ starts */}
                 <div className="faq-left">
                     <Accordion />
                 </div>
+                {/* accordion for FaQ ends */}
+
+                {/* years of experience section starts */}
                 <div className="faq-right">
                     <div className="faq-image">
-                        <img src="https://i.ibb.co/jkzXLK5/faq-one-img-1-1-X.png" alt="" />
+                        <img src="https://i.ibb.co/jkzXLK5/faq-one-img-1-1-X.png" alt="people talking" />
                     </div>
                     <div className="faq-inner-container">
                         <ul>
@@ -47,8 +51,8 @@ const Faq = () => {
                         </div>
                     </div>
                 </div>
+                {/* years of experience section ends */}
             </div>
-
             <div className="mt-100"></div>
         </section>
     );
