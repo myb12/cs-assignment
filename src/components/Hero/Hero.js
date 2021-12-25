@@ -1,5 +1,6 @@
 import React from 'react';
 import CustomButton from '../Shared/CustomButton';
+import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
 import './Hero.css';
 
 const Hero = () => {
@@ -19,6 +20,7 @@ const Hero = () => {
                     </CustomButton>
                 </div>
             </div>
+            <ScrollToTop />
         </section>
     );
 };
